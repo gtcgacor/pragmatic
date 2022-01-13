@@ -177,17 +177,11 @@
   10% {
     content: "CONNECTING";
   }
-  20% {
+  25% {
     content: "CHECKING";
   }
-  35% {
-    content: "VERIFIED";
-  }
-  50% {
-    content: "FETCHING";
-  }
   70% {
-    content: "RENDERING";
+    content: "CONNECTED";
   }
   90% {
     content: "LOADING";
