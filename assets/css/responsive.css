@@ -148,7 +148,7 @@
   margin: auto;
 }
 .loader--text:after {
-  content: "LOADING";
+  content: "Please Wait";
   font-weight: bold;
   font-size: xxx-large;
   animation-name: loading-text;
