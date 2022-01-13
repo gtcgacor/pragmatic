@@ -134,8 +134,16 @@ function setCookie(cname, cvalue, exdays) {
 <body>
 <div class='errorpage' id='errorpage'><center><h1>Ops.. Connection Error!</h1><button onclick="location.reload();"><h2>TRY AGAIN</h2></button></center></div>
 <div class='containerl' id='loading'>
-
-<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+<div class='loader'>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--dot'></div>
+    <div class='loader--text'></div>
+</div>
+<!-- <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> -->
 </div>
 <div id="wrapper" style="display:block;">
 
