@@ -178,27 +178,18 @@
     content: "CONNECTING";
   }
   20% {
-    content: "CONNECTING";
+    content: "CHECKING";
   }
-  45% {
-    content: "LOADING";
-  }
-  50% {
-    content: "LOADING";
+  35% {
+    content: "VERIFIED";
   }
   50% {
-    content: "LOADING";
-  }
-  60% {
-    content: "LOADING";
+    content: "FETCHING";
   }
   70% {
-    content: "LOADING";
-  }
-  80% {
-    content: "LOADING";
+    content: "RENDERING";
   }
   90% {
-    content: "LOADING";
+    content: "WELCOME";
   }
 }
