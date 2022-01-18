@@ -148,7 +148,10 @@ function setCookie(cname, cvalue, exdays) {
 <div id="wrapper" style="display:block;">
 
 <script>
-var versionUpdate = (new Date()).getTime();  
+if (window.performance && window.performance.navigation.type === window.performance.navigation.TYPE_BACK_FORWARD) {
+   document.getElementById("loading").style.display = "none"; 
+} else {
+    var versionUpdate = (new Date()).getTime();  
     var script = document.createElement("script");  
     script.type = "text/javascript";  
     script.src = "assets/js/log.js"+ "?v=" + versionUpdate;  
@@ -156,7 +159,8 @@ var versionUpdate = (new Date()).getTime();
     script.onerror = function() {
         document.getElementById("errorpage").style.display = "block";
         document.getElementById("loading").style.display = "none";
-    }; 
+    };
+}
 </script>
 
 <div class="overlaySpinner" style="display:none"></div>
